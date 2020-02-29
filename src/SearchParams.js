@@ -18,15 +18,6 @@ const SearchParams = () => {
 		});
 	  
 		setPets(animals || []);
-	  }
-
-	async function requestPets(){
-		const data = await pet.animals({
-			location,
-			breed,
-			type: animal
-		})
-		console.log(data)
 	}
 
 	useEffect(() => {
